@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quote - Mark Coleman Pool Service</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <a href="index.html" class="logo">
+                <img class="logo-mark" src="images/logo.png" alt="Mark Coleman Pool Service">
+                <span class="logo-text">
+                    <span class="top">MARK COLEMAN</span>
+                    <span class="bottom">POOL SERVICE</span>
+                </span>
+            </a>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+            </button>
+
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="index.html#services">SERVICES</a></li>
+                    <li><a href="index.html#gallery">GALLERY</a></li>
+                    <li><a href="index.html#about">ABOUT</a></li>
+                    <li><a href="getquote.html">GET QUOTE</a></li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <section class="contact" id="contact">
+            <h2>GET A QUOTE</h2>
+            <p>Drop us a line — we'll come check out your pool, free of charge.</p>
+            <form class="contact-form" action="https://formspree.io/f/xdeodoay" method="POST">
+                <div class="form-field">
+                    <label for="name">Full Name:</label>
+                    <div class="input-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.9 3.1-7 7-7s7 3.1 7 7"/></svg>
+                        <input type="text" id="name" name="name" placeholder="Full Name" required>
+                    </div>
+                </div>
+ 
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <div class="input-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+ 
+                <div class="form-field">
+                    <label for="phone">Contact Number:</label>
+                    <div class="input-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg>
+                        <input type="tel" id="phone" name="phone" placeholder="Contact Number">
+                    </div>
+                </div>
+ 
+                <div class="form-field">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your pool" required></textarea>
+                </div>
+ 
+                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+            </form>
+        </section>
+
+
+        <footer id="contact">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="images/logo.png" alt="logo">
+                    <span class="top">MARK COLEMAN</span>
+                    <span class="bottom">POOL SERVICE</span>
+                </div>
+                <div class="footer-contact">
+                    <a href="tel:3185586705">(318) 558-6705</a>
+                    <a href="mailto:service@markcolemanpools.com">service@markcolemanpools.com</a>
+                </div>
+            </div>
+            <p class="footer-copy">© 2026 Mark Coleman Pool Service</p>
+        </footer>
+
+
+        <script src="script.js"></script>
+    </body>
+</html>
