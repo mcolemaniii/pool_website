@@ -202,7 +202,14 @@ section h2 {
 .services-grid{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 60px;
+}
+
+@media (max-width: 600px) {
+    .services-grid{
+        gap: 30px;
+    }
 }
 
 .services-item{
