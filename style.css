@@ -114,10 +114,12 @@ nav a:hover{
         position: absolute;
         top: 68px;
         left: 0;
-        right: 0;
+        bottom: 0;
+        width: 250px;
         background: #fff;
-        border-bottom: 1px solid var(--border);
+        border-right: 1px solid var(--border);
         display: none;
+        z-index: 100;
     }
 
     nav.open {
