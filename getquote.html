@@ -33,7 +33,10 @@
 
         <section class="contact" id="contact">
             <h2>GET A QUOTE</h2>
+            
             <p>Drop us a line — we'll come check out your pool, free of charge.</p>
+            
+
             <form class="contact-form" action="https://formspree.io/f/xdeodoay" method="POST">
                 <div class="form-field">
                     <label for="name">Full Name:</label>
@@ -42,29 +45,79 @@
                         <input type="text" id="name" name="name" placeholder="Full Name" required>
                     </div>
                 </div>
- 
-                <div class="form-field">
-                    <label for="email">Email:</label>
-                    <div class="input-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
-                    </div>
-                </div>
- 
+
                 <div class="form-field">
                     <label for="phone">Contact Number:</label>
                     <div class="input-icon">
                         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1z"/></svg>
-                        <input type="tel" id="phone" name="phone" placeholder="Contact Number">
+                        <input type="tel" id="phone" name="phone" placeholder="Contact Number" required>
                     </div>
                 </div>
- 
+
+                <div class="form-field">
+                    <label for="email">Email:</label>
+                    <div class="input-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m4 7 8 6 8-6"/></svg>
+                        <input type="email" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="address">Service Address or City:</label>
+                    <div class="input-icon">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+                        <input type="text" id="address" name="address" placeholder="e.g. Bossier City, LA" required>
+                    </div>
+                </div>
+
+                <div class="form-field">
+                    <label for="service">Service Needed:</label>
+                    <select id="service" name="service" required>
+                        <option value="" disabled selected>Select a service</option>
+                        <option value="Weekly Maintenance">Weekly Maintenance</option>
+                        <option value="Winterization">Winterization</option>
+                        <option value="Green to Clean">Green to Clean</option>
+                        <option value="Drain and Clean">Drain and Clean</option>
+                        <option value="Equipment Install & Repair">Equipment Install & Repair</option>
+                        <option value="Not sure">Not sure / Other</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="pool_type">Pool Type:</label>
+                    <select id="pool_type" name="pool_type">
+                        <option value="" disabled selected>Select pool type</option>
+                        <option value="In-ground">In-ground</option>
+                        <option value="Above-ground">Above-ground</option>
+                    </select>
+                </div>
+
+                <div class="form-field">
+                    <label for="pool_size">Approximate Pool Size:</label>
+                    <input type="text" id="pool_size" name="pool_size" placeholder="e.g. 16x32 or gallons, if known">
+                </div>
+
+                <div class="form-field">
+                    <label for="condition">Current Pool Condition:</label>
+                    <select id="condition" name="condition">
+                        <option value="" disabled selected>Select condition</option>
+                        <option value="Routine / clear">Routine / clear</option>
+                        <option value="Green or cloudy">Green or cloudy</option>
+                        <option value="Not sure">Not sure</option>
+                    </select>
+                </div>
+
                 <div class="form-field">
                     <label for="message">Message:</label>
-                    <textarea id="message" name="message" rows="4" placeholder="Tell us about your pool" required></textarea>
+                    <textarea id="message" name="message" rows="4" placeholder="Anything else we should know?"></textarea>
                 </div>
  
                 <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+                <span style="text-align: center;">Or</span>
+                <div class="quote-buttons">
+                    <a href="tel:+13185886705" class="btn btn-primary">CALL NOW (318) 588-6705</a>
+                </div>
+                
             </form>
         </section>
 
@@ -95,6 +148,15 @@
         gtag('js', new Date());
 
         gtag('config', 'G-51X6MR22NM');
+        </script>
+        <script>
+                    document.querySelectorAll('.contact-form select').forEach(function (select) {
+            function updateColor() {
+                select.classList.toggle('placeholder', select.value === '');
+            }
+            updateColor();
+            select.addEventListener('change', updateColor);
+        });
         </script>
     </body>
 </html>

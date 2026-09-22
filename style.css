@@ -175,6 +175,7 @@ nav a:hover{
     align-items: center;
 }
 
+
 .btn-primary{
     background: var(--teal);
     color: #fff;
@@ -422,13 +423,14 @@ footer img{
 }
  
 .contact-form input,
-.contact-form textarea {
+.contact-form textarea,
+.contact-form select {
     border: 1px solid var(--border);
     border-radius: 4px;
     font-family: inherit;
     font-size: 14px;
     color: var(--navy);
-    background: #fff;
+    background-color: #fff;
     box-shadow: inset 0 1px 2px rgba(0,0,0,0.04);
 }
  
@@ -438,7 +440,8 @@ footer img{
 }
  
 .contact-form input:focus,
-.contact-form textarea:focus {
+.contact-form textarea:focus,
+.contact-form select:focus {
     outline: none;
     border-color: var(--teal);
     box-shadow: 0 0 0 3px rgba(26, 156, 181, 0.15);
@@ -449,6 +452,35 @@ footer img{
     cursor: pointer;
     align-self: center;
     margin-top: 6px;
+}
+
+.contact-form select {
+    width: 100%;
+    padding: 12px 36px 12px 14px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    cursor: pointer;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%231a9cb5' stroke-width='2'><path d='M6 9l6 6 6-6'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 14px center;
+    background-size: 14px;
+}
+
+.contact-form select:required:invalid {
+    color: #9aa5b1;
+}
+
+.contact-form select option {
+    color: var(--navy);
+}
+
+.contact-form select.placeholder {
+    color: #9aa5b1;
+}
+
+.contact-form select option {
+    color: var(--navy);
 }
 
 .services-item summary {
@@ -464,4 +496,20 @@ footer img{
 }
 .services-item p {
     margin-top: 8px;
+}
+
+.quote-buttons{
+    text-align: center;
+}
+
+.quote-button{
+    padding: 14px 28px;
+    border-radius: 4px;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    color: var(--teal);
+    text-decoration: none;
 }
