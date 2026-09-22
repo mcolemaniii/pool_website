@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta name="description" content="Expert pool cleaning and repair in the Bossier City, Shreveport, and Benton area. CPO certified, backed by three generations of service and experience.">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
-        <title>Home - Mark Coleman Pool Service</title>
+        <title>Pool Cleaning & Maintenance in Bossier City & Shreveport, LA | Mark Coleman Pool Service</title>
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
@@ -34,7 +35,7 @@
         <section class="hero" id="home">
             <div class="hero-content">
                 <h1>Three Generations.<br>One Standard of Excellence.</h1>
-                <p>Quality swimming pool maintenance and repair backed by three generations of tradition, service, and experience.</p>
+                <p>Quality pool cleaning, maintenance, and repair in the Bossier City, Shreveport, and Benton area. Backed by three generations of tradition, service, and experience.</p>
                 <div class="hero-buttons">
                     <a href="getquote.html" class="btn btn-primary">GET QUOTE NOW</a>
                     <a href="tel:+13185886705" class="btn btn-outline">CALL NOW (318) 588-6705</a>
@@ -42,33 +43,54 @@
             </div>
         </section>
 
-        <section class="services" id="services">
-            <div class="services-col">
-                <h2>OUR SERVICES</h2>
-                <div class="services-grid">
-                    <div class="services-item">
-                        <img src="images/weekly_maintenance.png">
-                        <span>Weekly Maintenance</span>
-                    </div>
-                    <div class="services-item">
-                        <img src="images/winterization.jpg">
-                        <span>Winterization</span>
-                    </div>
-                    <div class="services-item">
-                        <img src="images/greenclean.jpg">
-                        <span>Green to Clean</span>
-                    </div>
-                    <div class="services-item">
-                        <img src="images/drainclean.jpg">
-                        <span>Drain and Clean</span>
-                    </div>
-                    <div class="services-item">
-                        <img src="images/install.jpg">
-                        <span>Equipment Install & Repair</span>
+    <section class="services" id="services">
+        <div class="services-col">
+            <h2>OUR SERVICES</h2>
+            <div class="services-grid">
+
+                <div class="services-item">
+                    <img src="images/weekly_maintenance.png" alt="Weekly pool maintenance in Bossier City">
+                    <span>Weekly Maintenance</span>
+                    <div class="service-popup">
+                        <p>Routine cleaning, chemical balancing, and equipment checks to keep your pool swim-ready all season. Serving Bossier City, Shreveport, and Benton on a consistent weekly schedule.</p>
                     </div>
                 </div>
+
+                <div class="services-item">
+                    <img src="images/winterization.jpg" alt="Pool winterization service">
+                    <span>Winterization</span>
+                    <div class="service-popup">
+                        <p>Proper off-season closing. Balancing chemicals, protecting equipment, and covering your pool to prevent damage before winter sets in.</p>
+                    </div>
+                </div>
+
+                <div class="services-item">
+                    <img src="images/greenclean.jpg" alt="Green to clean pool service">
+                    <span>Green to Clean</span>
+                    <div class="service-popup">
+                        <p>Algae-covered or neglected pool? We restore green, cloudy water back to clean, swim-ready condition, fast.</p>
+                    </div>
+                </div>
+
+                <div class="services-item">
+                    <img src="images/drainclean.jpg" alt="Pool drain and clean service">
+                    <span>Drain and Clean</span>
+                    <div class="service-popup">
+                        <p>A full drain, acid wash, and deep clean to remove built-up stains, scale, and debris that routine maintenance alone can't fix.</p>
+                    </div>
+                </div>
+
+                <div class="services-item">
+                    <img src="images/install.jpg" alt="Pool equipment install and repair">
+                    <span>Equipment Install & Repair</span>
+                    <div class="service-popup">
+                        <p>Installation, troubleshooting, and repair for pumps, filters, heaters, and other pool equipment. We keep your system running reliably.</p>
+                    </div>
+                </div>
+
             </div>
-        </section>
+        </div>
+    </section>
 
         <section class="gallery" id="gallery">
             <h2>GALLERY</h2>
@@ -88,7 +110,7 @@
         <section class="about" id="about">
             <div class="about-content">
                 <h2>ABOUT US</h2>
-                <p>Mark Coleman Pool Service is built on a standard of pool care shaped by three generations of experience. As a third-generation pool technician, I grew up around the knowledge, attention to detail, and work ethic that go into maintaining a pool the right way.<br><br>Today, I bring that experience to every customer personally with a focus on reliable service, clear communication, and consistent, high quality care. My goal is simple: keep your pool clean, healthy, and ready to enjoy while providing dependable service you can count on week after week.</p>
+                <p>Mark Coleman Pool Service is built on a standard of pool care shaped by three generations of experience, proudly serving Bossier City, Shreveport, and Benton. As a third-generation pool technician, I grew up around the knowledge, attention to detail, and work ethic that go into maintaining a pool the right way.<br><br>Today, I bring that experience to every customer personally with a focus on reliable service, clear communication, and consistent, high quality care. Whether you're in Bossier City, Shreveport, or Benton, my goal is simple: keep your pool clean, healthy, and ready to enjoy while providing dependable service you can count on week after week.</p>
             </div>
         </section>
         <section class="cert">
@@ -125,5 +147,26 @@
 
         gtag('config', 'G-51X6MR22NM');
         </script>
+        <script>
+        document.querySelectorAll('.services-item').forEach(function (item) {
+            item.addEventListener('click', function (e) {
+                var isActive = item.classList.contains('active');
+                document.querySelectorAll('.services-item.active').forEach(function (el) {
+                    el.classList.remove('active');
+                });
+                if (!isActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+
+        document.addEventListener('click', function (e) {
+            if (!e.target.closest('.services-item')) {
+                document.querySelectorAll('.services-item.active').forEach(function (el) {
+                    el.classList.remove('active');
+                });
+            }
+        });
+    </script>
     </body>
 </html>
