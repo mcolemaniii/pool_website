@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://markcolemanpools.com/sitemap.xml
