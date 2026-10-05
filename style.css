@@ -539,3 +539,128 @@ footer img{
     color: var(--teal);
     text-decoration: none;
 }
+
+
+.certification{
+    text-align:center;
+}
+
+.certification img{
+    width: 100px;
+    height: 100px;
+}
+
+.rating-line {
+    font-weight: bold;
+    color: #f5a623;
+    text-align: center;
+}
+
+.reviews {
+    padding: 40px 16px;
+    text-align: center;
+}
+
+.review-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.review-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.review-card .stars {
+    color: #f5a623;
+    font-size: 18px;
+    margin-bottom: 8px;
+}
+
+.reviewer {
+    font-size: 14px;
+    color: #666;
+}
+
+.all-reviews {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.cpo-badge {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+    max-width: 600px;
+    margin: 16px auto 24px;
+    text-align: center;
+}
+
+.cpo-badge img {
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.cpo-text strong {
+    display: block;
+    font-size: 16px;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    .cpo-text strong {
+        white-space: normal;
+    }
+}
+
+.cpo-text span {
+    font-size: 13px;
+    color: #666;
+}
+
+.meet-mark {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 50px 16px;
+}
+
+.meet-mark img {
+    width: 50%;
+    max-width: 480px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(28, 45, 74, 0.15);
+}
+
+.meet-mark-text h2 {
+    margin-top: 0;
+    color: var(--navy);
+}
+
+.meet-mark-text p {
+    line-height: 1.6;
+}
+
+@media (max-width: 700px) {
+    .meet-mark {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .meet-mark img {
+        width: 100%;
+    }
+}

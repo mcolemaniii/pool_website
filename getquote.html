@@ -30,12 +30,19 @@
             </nav>
         </header>
 
-
-
         <section class="contact" id="contact">
             <h2>GET A QUOTE</h2>
             
             <p>Drop us a line — we'll come check out your pool, free of charge.</p>
+
+            <div class="cpo-badge">
+                <img src="images/cpo.png" alt="Mark Coleman Pool Service logo">
+                <div class="cpo-text">
+                    <strong>Your pool, handled by a Certified Pool Operator.</strong>
+                    <span>Nationally recognized training in water chemistry, equipment, and safety.</span>
+                </div>
+                <img src="images/logo.png" alt="Certified Pool Operator badge">
+            </div>
             
 
             <form class="contact-form" action="https://formspree.io/f/xdeodoay" method="POST">
@@ -54,7 +61,7 @@
                         <input type="tel" id="phone" name="phone" placeholder="Contact Number" required>
                     </div>
                 </div>
-
+<!--
                 <div class="form-field">
                     <label for="email">Email:</label>
                     <div class="input-icon">
@@ -62,7 +69,7 @@
                         <input type="email" id="email" name="email" placeholder="Email">
                     </div>
                 </div>
-
+-->
                 <div class="form-field">
                     <label for="address">Service Address or City:</label>
                     <div class="input-icon">
@@ -72,18 +79,18 @@
                 </div>
 
                 <div class="form-field">
-                    <label for="service">Service Needed:</label>
+                    <label for="service">What's going on with your pool?</label>
                     <select id="service" name="service" required>
-                        <option value="" disabled selected>Select a service</option>
-                        <option value="Weekly Maintenance">Weekly Maintenance</option>
-                        <option value="Winterization">Winterization</option>
-                        <option value="Green to Clean">Green to Clean</option>
-                        <option value="Drain and Clean">Drain and Clean</option>
-                        <option value="Equipment Install & Repair">Equipment Install & Repair</option>
+                        <option value="" disabled selected>Let us know what's going on!</option>
+                        <option value="Weekly Maintenance">I want someone to take care of it every week.</option>
+                        <option value="Winterization">I need to close it for the winter.</option>
+                        <option value="Cloudy or Green">My pool is cloudy or green.</option>
+                        <option value="Drain and Clean">I need it drained and cleaned.</option>
+                        <option value="Equipment Install & Repair">Something is broken (pump, filter, heater, etc.)</option>
                         <option value="Not sure">Not sure / Other</option>
                     </select>
                 </div>
-
+<!--
                 <div class="form-field">
                     <label for="pool_type">Pool Type:</label>
                     <select id="pool_type" name="pool_type">
@@ -112,14 +119,41 @@
                     <label for="message">Message:</label>
                     <textarea id="message" name="message" rows="4" placeholder="Anything else we should know?"></textarea>
                 </div>
- 
-                <button type="submit" class="btn btn-primary">SEND MESSAGE</button>
+--> 
+                <button type="submit" class="btn btn-primary">GET MY FREE ESTIMATE</button>
+                <span style="font-size: 14px; text-align: center; font-style:italic">We'll call you within the hour - keep an eye on your phone!</span>
                 <span style="text-align: center;">Or</span>
                 <div class="quote-buttons">
                     <a href="tel:+13185886705" class="btn btn-primary">CALL NOW (318) 588-6705</a>
                 </div>
                 
             </form>
+        </section>
+
+        <section class="meet-mark">
+            <img src="images/mark.jpg" alt="Mark Coleman with his Mark Coleman Pool Service truck">
+            <div class="meet-mark-text">
+                <h2>MEET MARK</h2>
+                <p>I'm a third-generation pool technician, and I grew up learning the knowledge, attention to detail, and work ethic it takes to care for a pool the right way.</p>
+                <p>When you call, you get me &mdash; personally. I serve Bossier City, Shreveport, Haughton, and Benton, and my goal is simple: keep your pool clean, healthy, and ready to enjoy.</p>
+            </div>
+        </section>
+
+        <section class="reviews">
+        <h2>WHAT OUR CUSTOMERS SAY</h2>
+        <div class="review-grid">
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>Earlier this summer we moved into a new house and the pool was green. Mark came out and had us swimming in just a couple days. He’s been taking care of us since and we’ve always had clear water. Highly recommend!!</p>
+                <span class="reviewer">— Ciara T, Bossier City</span>
+            </div>
+            <div class="review-card">
+                <div class="stars">★★★★★</div>
+                <p>Mark takes care of my pool. He does a fantastic job. When I thought my pump needed to be replaced, he was able to repair it and saved me hundreds of dollars.</p>
+                <span class="reviewer">— Albie T, Shreveport</span>
+            </div>
+        </div>
+        <a class="all-reviews" href="https://share.google/848EsRtRVeqVAr1DG" target="_blank">See all our reviews on Google →</a>
         </section>
 
 
